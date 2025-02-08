@@ -1,0 +1,316 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.fortaleza-logo {
+    width: 1440;
+    height: 501;
+    top: -323px;
+    left: -859px;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    font-weight: bold;
+    color: #001f54;
+}
+
+
+.hero {
+    position: relative;
+    text-align: center; 
+}
+
+.hero-image {
+    width: 100%;
+    display: block;
+    margin: 0 auto; 
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-family: IBM Plex Sans Condensed;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 2%;
+    text-align: center;
+
+    
+}
+
+.hero-content p {
+    font-family: IBM Plex Sans Condensed;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 2%;
+    text-align: center;
+    
+}
+
+/* Quem Somos Section */
+.quem-somos {
+    background-color: #e9e7f0;
+    padding: 40px;
+}
+
+.quem-somos-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.quem-somos-image {
+    width: 70%;
+}
+
+.quemsomos img {
+    width: 150%;
+    display: block;
+    border-radius: 5px;
+    height: 512.3599853515625;
+    top: 202px;
+    left: -779px;
+
+}
+
+.quem-somos-text {
+    
+    left: -94px;
+    width: 595;
+    height: 191;
+    top: 336px;
+    left: -94px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+
+    
+
+}
+
+.quem-somos-text h2 {
+    font-size: 2.5em;
+    color: #e60013;
+    margin-bottom: 20px;
+    width: 298;
+    height: 36;
+    top: 248px;
+    left: -94px;
+
+}
+
+.quem-somos-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.saiba-mais-button {
+    background-color: #001f54;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+/* Eventos Section Styles */
+.eventos {
+    background-color: #001f54;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.eventos h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.eventos-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.evento-item {
+    background-color: #1a2d5e;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden; /* Hide content overflow */
+}
+
+.evento-item .evento-content {
+    padding: 0 15px;
+    font-size: 0.9em;
+    line-height: 1.5;
+    display: none; /* Initially hide content */
+}
+
+.evento-item.expanded .evento-content {
+    display: block;
+    padding: 15px;
+}
+
+.evento-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.evento-header h3 {
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: normal;
+}
+
+.close-button,
+.toggle-button {
+    background-color: transparent;
+    border: 1px solid #dc3838;
+    color: #dc3838;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    .fortaleza-logo {
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    .hero-content {
+        position: relative; 
+        top: auto;  
+        left: auto;  
+        transform: none;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .quem-somos-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quem-somos-image {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .quem-somos-text {
+        width: 100%;
+    }
+
+    .quem-somos-text h2 {
+        font-size: 2em;
+    }
+    .eventos {
+        padding: 20px;
+    }
+
+    .eventos h2 {
+        font-size: 2em;
+    }
+}
