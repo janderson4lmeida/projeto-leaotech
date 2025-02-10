@@ -206,23 +206,33 @@ nav a {
     margin-bottom: 30px;
 }
 
+
 .eventos-list {
     max-width: 800px;
     margin: 0 auto;
 }
 
 .evento-item {
+    background-image: url("");
     background-color: #1a2d5e;
     margin-bottom: 10px;
     border-radius: 5px;
-    overflow: hidden; /* Hide content overflow */
+    overflow: hidden;
 }
+
+.eventos img{
+   
+    width: 100%;
+    display: block;
+    margin: 0 auto; 
+}
+
 
 .evento-item .evento-content {
     padding: 0 15px;
     font-size: 0.9em;
     line-height: 1.5;
-    display: none; /* Initially hide content */
+    display: none; 
 }
 
 .evento-item.expanded .evento-content {
@@ -244,20 +254,32 @@ nav a {
     font-weight: normal;
 }
 
-.close-button,
-.toggle-button {
-    background-color: transparent;
-    border: 1px solid #dc3838;
-    color: #dc3838;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1em;
+.eventos-summary {
+    background-image: url (".IMG/botao-abrir(1).png");
+    background-repeat: no-repeat;
+    background-position: right center; 
+    padding-right: 1%; 
+    cursor: pointer; 
+    
+
+  }
+  summary {
+    display: flex; /* Alinha os elementos horizontalmente */
+    justify-content: space-between; /* Alinha os elementos verticalmente */
     cursor: pointer;
-}
+  }
+  
+ 
+  summary::after {
+   content: url(./IMG/botao-abrir\ \(1\).png);
+
+
+  }
+
+  details[open] summary::after {
+    content: url(./IMG/botao-abrir\ \(2\).png);
+  }
+
 /* Imagens Section Styles */
 .imagens {
     background-color: #001f54;
@@ -292,10 +314,11 @@ nav a {
 
 .imagens-grid img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 1%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     object-fit: cover;
-    height: 200px;
+    height: 700px;
+
 }
 
 
@@ -401,7 +424,7 @@ footer {
 
 .footer-section {
     width: 45%; 
-    background: #000;
+
     display: block;
     
 }
@@ -456,24 +479,6 @@ footer {
 .footer-logo-fortaleza {
     width: 8%;
 }  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Responsive Design */
