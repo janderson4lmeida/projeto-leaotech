@@ -101,13 +101,13 @@ nav a {
 
 .hero-content h2 {
     font-family: IBM Plex Sans Condensed;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 24px;
     line-height: 26px;
     letter-spacing: 2%;
     text-align: center;
-
     
+
 }
 
 .hero-content p {
@@ -195,6 +195,7 @@ nav a {
 
 /* Eventos Section Styles */
 .eventos {
+    background-image: url(./IMG/bgTvLeao_Home\ 1.png);
     background-color: #001f54;
     padding: 40px;
     color: #fff;
@@ -221,7 +222,6 @@ nav a {
 }
 
 .eventos img{
-   
     width: 100%;
     display: block;
     margin: 0 auto; 
@@ -229,6 +229,7 @@ nav a {
 
 
 .evento-item .evento-content {
+    
     padding: 0 15px;
     font-size: 0.9em;
     line-height: 1.5;
@@ -255,7 +256,6 @@ nav a {
 }
 
 .eventos-summary {
-    background-image: url (".IMG/botao-abrir(1).png");
     background-repeat: no-repeat;
     background-position: right center; 
     padding-right: 1%; 
@@ -282,6 +282,7 @@ nav a {
 
 /* Imagens Section Styles */
 .imagens {
+    background-image: url(./IMG/bgTvLeao_Home\ 2.png);
     background-color: #001f54;
     padding: 100px;
     color: #fff;
