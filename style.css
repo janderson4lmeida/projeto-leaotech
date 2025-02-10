@@ -208,12 +208,14 @@ nav a {
 }
 
 
+
 .eventos-list {
     max-width: 800px;
     margin: 0 auto;
 }
 
 .evento-item {
+    background-image: url("");
     background-image: url("");
     background-color: #1a2d5e;
     margin-bottom: 10px;
@@ -228,11 +230,13 @@ nav a {
 }
 
 
+
 .evento-item .evento-content {
     
     padding: 0 15px;
     font-size: 0.9em;
     line-height: 1.5;
+    display: none; 
     display: none; 
 }
 
@@ -316,8 +320,11 @@ nav a {
 .imagens-grid img {
     width: 100%;
     border-radius: 1%;
+    border-radius: 1%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     object-fit: cover;
+    height: 700px;
+
     height: 700px;
 
 }
