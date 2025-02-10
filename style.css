@@ -30,23 +30,24 @@ header {
     padding: 0 110px;
 }
 
-.top-bar ul{
-display: flex;
-font-size: 16px;
+.top-bar ul {
+    display: flex;
+    font-size: 16px;
 
 }
+
 .logo-container {
     display: flex;
     align-items: center;
     justify-content: start;
-    
+
 }
 
 .logo {
     height: 5em;
     width: 100;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     /* margin-right: 10px; */
 }
 
@@ -78,22 +79,22 @@ nav a {
 .hero {
     border-top: 28px solid #CC1235;
     position: relative;
-    text-align: center; 
+    text-align: center;
     display: block;
 }
 
 .hero-image {
-    
+
     width: 100%;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     color: white;
     padding: 20px;
     text-align: center;
@@ -106,7 +107,7 @@ nav a {
     line-height: 26px;
     letter-spacing: 2%;
     text-align: center;
-    
+
 
 }
 
@@ -117,7 +118,7 @@ nav a {
     line-height: 26px;
     letter-spacing: 2%;
     text-align: center;
-    
+
 }
 
 /* Quem Somos Section */
@@ -154,20 +155,25 @@ nav a {
     height: 191;
     top: 336px;
     left: -94px;
-    font-family: Inter;
+
+
+
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0%;
 
 
-    
+
 
 }
 
 .quem-somos-text h2 {
     font-size: 2.5em;
     color: #e60013;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
     margin-bottom: 20px;
     width: 298;
     height: 36;
@@ -177,9 +183,11 @@ nav a {
 }
 
 .quem-somos-text p {
-    font-size: 1.1em;
+    font-size: 16px;
+    /* font-weight: 400; */
+    /* font-style: normal;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
 }
 
 .saiba-mais-button {
@@ -199,13 +207,19 @@ nav a {
     padding: 50px;
     color: #fff;
     text-align: center;
-    grid-template-columns: 1fr; /* Uma coluna */
-    row-gap: 10px; /* Ajuste o valor do row-gap conforme necessário */
+    grid-template-columns: 1fr;
+    /* Uma coluna */
+    row-gap: 10px;
+    /* Ajuste o valor do row-gap conforme necessário */
 }
 
 .eventos h2 {
     font-size: 2.5em;
     margin-bottom: 50px;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 .eventos-list {
@@ -220,20 +234,20 @@ nav a {
     overflow: hidden;
 }
 
-.eventos img{
+.eventos img {
     width: 100%;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 
 
 .evento-item .evento-content {
-    padding: 40px 20px; 
+    padding: 40px 20px;
     font-size: 0.9em;
     line-height: 1.5;
-    display: none; 
-    
+    display: none;
+
 }
 
 .evento-item.expanded .evento-content {
@@ -257,31 +271,36 @@ nav a {
 
 .eventos-summary {
     background-repeat: no-repeat;
-    background-position: right center; 
-    padding-right: 1%; 
-    margin-bottom: 100px; /* Ajuste o valor da margem conforme necessário */
-    cursor: pointer; 
-    
-
-  }
-  summary {
-    background-color: #0E1116;
-    display: flex; /* Alinha os elementos horizontalmente */
-    justify-content: space-between; /* Alinha os elementos verticalmente */
-    padding-bottom: 10px; /* Ajuste o valor do padding conforme necessário */
+    background-position: right center;
+    padding-right: 1%;
+    margin-bottom: 100px;
+    /* Ajuste o valor da margem conforme necessário */
     cursor: pointer;
-  }
-  
- 
-  summary::after {
-   content: url(./IMG/botao-abrir\ \(1\).png);
 
 
-  }
+}
 
-  details[open] summary::after {
+summary {
+    background-color: #0E1116;
+    display: flex;
+    /* Alinha os elementos horizontalmente */
+    justify-content: space-between;
+    /* Alinha os elementos verticalmente */
+    padding-bottom: 10px;
+    /* Ajuste o valor do padding conforme necessário */
+    cursor: pointer;
+}
+
+
+summary::after {
+    content: url(./IMG/botao-abrir\ \(1\).png);
+
+
+}
+
+details[open] summary::after {
     content: url(./IMG/botao-abrir\ \(2\).png);
-  }
+}
 
 /* Imagens Section Styles */
 .imagens {
@@ -295,7 +314,7 @@ nav a {
     top: 2228px;
     left: -760px;
 
-    
+
 
 }
 
@@ -309,11 +328,12 @@ nav a {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;width: 1240.7603759765625;
+    gap: 20px;
+    width: 1240.7603759765625;
     height: 723.7056884765625;
     top: 2228px;
-    left: -760px;    
-    
+    left: -760px;
+
 }
 
 .imagens-grid img {
@@ -343,15 +363,16 @@ nav a {
 }
 
 .title-projeto img {
-margin-top: 0.5em;
+    margin-top: 0.5em;
 }
 
-.title-projeto h2{
+.title-projeto h2 {
     color: #CC1235;
     margin-bottom: 2px;
     font-size: 3em;
 }
-.title-projeto p{
+
+.title-projeto p {
     text-align: center;
     width: 100%;
     margin-top: 2px;
@@ -362,15 +383,16 @@ margin-top: 0.5em;
 
 /* Sessão de Cards do projeto */
 .projects {
-    background-color: #D9D9D9; 
+    background-color: #D9D9D9;
     padding: 50px;
 }
+
 .projects-grid {
     max-width: 1200px;
     margin: 0 auto;
     display: block;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    
+
 }
 
 .projects-grid img {
@@ -379,11 +401,11 @@ margin-top: 0.5em;
 
 .card-container {
     display: flex;
-    flex-wrap:wrap; 
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
 
-    
+
 }
 
 
@@ -395,25 +417,30 @@ footer {
     padding-top: 5em;
     padding-bottom: 40px;
     justify-content: space-between;
-    padding: 40px; 
+    padding: 40px;
 }
 
 
 .footer-content {
     display: grid;
-    padding: 50px; /* Espaçamento interno */
+    padding: 50px;
+    /* Espaçamento interno */
 }
 
 .footer-top {
     display: grid;
-    flex-direction: column; /* Alinha os itens verticalmente */
-    justify-content: space-between;   /* Centraliza horizontalmente */
-    text-align: start; /* Centraliza o texto */
-    margin-bottom: 20px; /* Espaçamento abaixo do topo */
-} 
+    flex-direction: column;
+    /* Alinha os itens verticalmente */
+    justify-content: space-between;
+    /* Centraliza horizontalmente */
+    text-align: start;
+    /* Centraliza o texto */
+    margin-bottom: 20px;
+    /* Espaçamento abaixo do topo */
+}
 
- .footer-top p {
-    font-size: 24px; 
+.footer-top p {
+    font-size: 24px;
     width: 506;
     height: 34;
     top: 4118px;
@@ -423,13 +450,14 @@ footer {
 
 .footer-bottom {
     display: flex;
-    gap: 50px; /* Espaçamento entre as colunas */
+    gap: 50px;
+    /* Espaçamento entre as colunas */
 }
 
 
 .footer-section h3 {
     width: 186px;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
     font-size: 1.3em;
     border-bottom: 1px solid #fff;
     padding-bottom: 5px;
@@ -467,13 +495,18 @@ footer {
     left: -759px;
 
 }
+
 .nav {
-    max-width: 100px; /* Largura máxima do logo */
-    margin-bottom: 5px; /* Espaçamento abaixo do logo */
+    max-width: 100px;
+    /* Largura máxima do logo */
+    margin-bottom: 5px;
+    /* Espaçamento abaixo do logo */
     display: flex;
-    gap: 70px; /* Espaçamento entre as colunas */
+    gap: 70px;
+    /* Espaçamento entre as colunas */
 }
-.nav img{
+
+.nav img {
     width: 180;
     height: 100;
     top: 3984px;
@@ -509,20 +542,21 @@ footer {
     }
 
     .hero-content {
-        position: relative; 
-        top: auto;  
-        left: auto;  
+        position: relative;
+        top: auto;
+        left: auto;
         transform: none;
         padding: 10px;
         text-align: center;
     }
 
-    .hero-content h2 {
-        font-size: 1.5em;
-    }
 
     .hero-content p {
         font-size: 1em;
+        font-family: "Inter", serif;
+        font-weight: 400;
+        font-style: normal;
+
     }
 
     .quem-somos-content {
@@ -542,6 +576,7 @@ footer {
     .quem-somos-text h2 {
         font-size: 2em;
     }
+
     .eventos {
         padding: 20px;
     }
@@ -565,6 +600,7 @@ footer {
     .imagens-grid img {
         height: 150px;
     }
+
     .projects {
         padding: 20px 10px;
     }
@@ -577,24 +613,29 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
-   
+
     .footer-grid {
-        grid-template-columns: 1fr; /* Duas colunas em telas maiores */
+        grid-template-columns: 1fr;
+        /* Duas colunas em telas maiores */
     }
 
     .footer-top {
-        flex-direction: row; /* Alinha os itens horizontalmente */
-        justify-content: space-around; /* Distribui os itens uniformemente */
+        flex-direction: row;
+        /* Alinha os itens horizontalmente */
+        justify-content: space-around;
+        /* Distribui os itens uniformemente */
         align-items: flex-start;
         text-align: left;
     }
 
     .footer-logo {
-        margin-bottom: 0; /* Remove a margem inferior do logo em telas maiores */
+        margin-bottom: 0;
+        /* Remove a margem inferior do logo em telas maiores */
     }
 
     .footer-bottom {
-        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas maiores */
+        grid-template-columns: repeat(2, 1fr);
+        /* Duas colunas em telas maiores */
     }
 
 
