@@ -38,7 +38,7 @@ font-size: 16px;
 .logo-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     
 }
 
@@ -149,7 +149,6 @@ nav a {
 }
 
 .quem-somos-text {
-    
     left: -94px;
     width: 595;
     height: 191;
@@ -197,17 +196,17 @@ nav a {
 .eventos {
     background-image: url(./IMG/bgTvLeao_Home\ 1.png);
     background-color: #001f54;
-    padding: 40px;
+    padding: 50px;
     color: #fff;
     text-align: center;
+    grid-template-columns: 1fr; /* Uma coluna */
+    row-gap: 10px; /* Ajuste o valor do row-gap conforme necessário */
 }
 
 .eventos h2 {
     font-size: 2.5em;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
-
-
 
 .eventos-list {
     max-width: 800px;
@@ -215,11 +214,9 @@ nav a {
 }
 
 .evento-item {
-    background-image: url("");
-    background-image: url("");
-    background-color: #1a2d5e;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    background-color: #0e11167f;
+    margin-bottom: 30px;
+    border-radius: 0%;
     overflow: hidden;
 }
 
@@ -232,12 +229,11 @@ nav a {
 
 
 .evento-item .evento-content {
-    
-    padding: 0 15px;
+    padding: 40px 20px; 
     font-size: 0.9em;
     line-height: 1.5;
     display: none; 
-    display: none; 
+    
 }
 
 .evento-item.expanded .evento-content {
@@ -263,13 +259,16 @@ nav a {
     background-repeat: no-repeat;
     background-position: right center; 
     padding-right: 1%; 
+    margin-bottom: 100px; /* Ajuste o valor da margem conforme necessário */
     cursor: pointer; 
     
 
   }
   summary {
+    background-color: #0E1116;
     display: flex; /* Alinha os elementos horizontalmente */
     justify-content: space-between; /* Alinha os elementos verticalmente */
+    padding-bottom: 10px; /* Ajuste o valor do padding conforme necessário */
     cursor: pointer;
   }
   
@@ -396,8 +395,7 @@ footer {
     padding-top: 5em;
     padding-bottom: 40px;
     justify-content: space-between;
-     /* Alinha os itens verticalmente */
-    padding: 40px 20px; 
+    padding: 40px; 
 }
 
 
@@ -425,7 +423,7 @@ footer {
 
 .footer-bottom {
     display: flex;
-    gap: 100px; /* Espaçamento entre as colunas */
+    gap: 50px; /* Espaçamento entre as colunas */
 }
 
 
