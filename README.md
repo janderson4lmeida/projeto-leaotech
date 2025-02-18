@@ -1,1 +1,1 @@
-# Projeto Leão Tech - Trilha do Front End
+# Projeto Leão Tech - Trilha Front End
